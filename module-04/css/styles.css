@@ -167,6 +167,7 @@
   width: 350px;
   float: left;
   margin-bottom: 102px;
+  list-style: none;
 }
 .news-item:not(:last-child) {
   margin-right: 30px;
