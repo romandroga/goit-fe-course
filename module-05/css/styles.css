@@ -4,7 +4,7 @@
   clear: both;
 }
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -39,49 +39,70 @@
 
 .slider {
   background-image: url(../img/slider_background.png);
-  width: 1600px;
-  height: 600px;
+  /* max-width: 1600px; */
+  min-height: 600px;
   margin: 0 auto;
   margin-top: 32px;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slider-layer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #000002;
-  opacity: 0.52;
+  /* background-color: #000002;
+  opacity: 0.52; */
+  background-color: rgba(0, 0, 2, 0.52);
 }
 .slider-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50% );
+  line-height: 600px;
+  /* vertical-align: middle; */
 }
 .slider-left {
   position: absolute;
   width: 104px;
   height: 104px;
-  background-color: #4ec6ab;
-  opacity: 0.65;
-  top: 255px;
-  left: 240px;
+  background-color: rgba(78, 198, 171, 0.65);
+  /* opacity: 0.65; */
+  /* top: 255px; */
+  /* left: 240px; */
+  left: 10%;
+  top: 43%;
+  border: none;
+  outline: none;
 }
 .slider-right {
   position: absolute;
   width: 104px;
   height: 104px;
-  background-color: #4ec6ab;
-  opacity: 0.65;
-  top: 255px;
-  right: 240px;
+  background-color: rgba(78, 198, 171, 0.65);
+  /* top: 255px; */
+  /* right: 240px; */
+  right:10%;
+  top: 43%;
+  border: none;
+  outline: none;
+}
+.slider-left:hover{
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
+}
+.slider-right:hover{
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
 }
 
 /* new collection */
 .new-collection {
   background-color: #e9f0fd;
-  width: 1600px;
-  height: 676px;
+  /* width: 1600px; */
+  /* max-width: 1110px; */
+  min-height: 676px;
   margin: 0 auto;
   position: relative;
 }
@@ -104,11 +125,15 @@
   background-color: #1abc9c;
 }
 .card-list {
-  position: absolute;
+  /* position: absolute;
   top: 255px;
-  left: 255px;
+  left: 255px;  */
+  max-width: 1110px;
+  margin: 0 auto;
+  display: block;
 }
-.card {
+
+.card{
   width: 255px;
   float: left;
   cursor: pointer;
@@ -125,6 +150,7 @@
   position: absolute;
   width: 255px;
   height: 40px;
+  line-height: 40px;
   background-color: #323232;
   left: 0;
   bottom: 0;
@@ -135,7 +161,8 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 12px 14px;
+  vertical-align: middle;
+  padding-left: 14px;
 }
 .card-price {
   box-sizing: border-box;
@@ -149,7 +176,8 @@
   font-size: 18px;
   font-weight: 900;
   color:white;
-  padding: 12px 12px;
+  vertical-align: middle;
+  padding-left: 12px;
 }
 .card:hover .card-sub {
     background-color: #1abc9c;
@@ -164,7 +192,7 @@
 }
 /* FOOTER */
 .footer{
-    width: 1600px;
+    /* width: 1600px; */
     height: 88px;
     background-color: #323232;
     margin: 0 auto;
