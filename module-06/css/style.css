@@ -227,9 +227,6 @@ header {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px rgb(149, 225, 211);
 }
-.sub-mebu:hover{
-
-}
 .socials {
   display: flex;
   justify-content: space-between;
