@@ -18,6 +18,10 @@ header {
   width: 490px;
   justify-content: space-between;
 }
+.navigation-list-item{
+  position: relative;
+  padding-bottom: 12px;
+}
 
 .navigation-list-item a {
   text-decoration: none;
@@ -26,22 +30,26 @@ header {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 .navigation-list-item a:after {
-  content: "";
-  width: 100%;
+  position: absolute;
+  content:"";
+  width: 0;
   height: 3px;
-  background-color: #f38181;
-  display: none;
+  background: #f38181;
+  bottom: 0;
+  left: 50%;
+  transition: width .5s, left, .5s;  
 }
 .navigation-list-item a:hover {
   color: #f38181;
 }
 .navigation-list-item a:hover:after {
-  position: relative;
+  /* position: relative;
   top: 12px;
-  display: block;
+  display: block; */
+  width: 100%;
+  left: 0;
 }
 
 /* HEADER END */
@@ -220,7 +228,7 @@ header {
   );
   justify-content: center;
   align-items: center;
-  transition: transform 200ms linear;
+  transition: 200ms linear 0.2s;
 }
 .sub-menu:hover {
   opacity: 1;
