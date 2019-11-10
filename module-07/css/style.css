@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 940px;
+}
+.form {
+  width: 455px;
+}
+
+/* FONTS  */
+/* open-sans-600 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+    url("../fonts/open-sans-v17-latin-600.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin-600.woff") format("woff");
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url("../fonts/open-sans-v17-latin-700.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin-700.woff") format("woff");
+}
+/* open-sans-italic - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), local("OpenSans-Italic"),
+    url("../fonts/open-sans-v17-latin-italic.woff2") format("woff2"),
+    url("../fonts/open-sans-v17-latin-italic.woff") format("woff");
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab"), local("RobotoSlab"),
+    url("../fonts/roboto-slab-v9-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-slab-v9-latin-regular.woff") format("woff");
+}
+
+/* HEADER  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 55px 0;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  width: 480px;
+  justify-content: space-between;
+  list-style: none;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+}
+.navigation-item-link {
+  text-decoration: none;
+  color: #222222;
+}
+.navigation-item-link:hover {
+  color: #fed752;
+}
+/* HEADER END  */
+
+/* SERVICES */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-header {
+  margin: 0 auto;
+  padding-top: 72px;
+  margin-bottom: 19px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.section-subtitle {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  color: #777777;
+  font-family: "Open Sans";
+  font-style: italic;
+}
+/* SERVICES-LIST  */
+.services-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.services-list-item {
+  display: flex;
+  flex-direction: column;
+  width: 274px;
+  align-items: center;
+}
+.basket::before {
+  content: url(../img/icon-basket.png);
+}
+.laptop::before {
+  content: url(../img/icon-laptop.png);
+}
+.locked::before {
+  content: url(../img/icon-lock.png);
+}
+::before {
+  margin-bottom: 28px;
+}
+.item-header {
+  margin-bottom: 15px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.item-text {
+  text-align: center;
+  margin-bottom: 120px;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.75;
+  letter-spacing: -0.35px;
+}
+/* SERVICES-LIST END  */
+/* SERVICES END  */
+
+/* CONTACT FORM  */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222222;
+}
+
+.form-header {
+  margin-top: 110px;
+  margin-bottom: 23px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.form-subtitle {
+  margin-bottom: 75px;
+  color: #777777;
+  font-family: "Open Sans";
+  font-style: italic;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-bottom: 30px;
+  position: relative;
+}
+.form-wrapper::after {
+  content: url(../img/layer-map.png);
+  position: absolute;
+  top: -140px;
+  left: 560px;
+}
+.form-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.form-left,
+.form-right {
+  width: 455px;
+  height: 210px;
+}
+.form-left-item {
+  box-sizing: border-box;
+  width: 455px;
+  height: 50px;
+  padding: 20px;
+  border-style: none;
+  border-radius: 3px;
+  color: #bbbbbb;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.35px;
+}
+.form-left-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 455px;
+  height: 210px;
+  resize: none;
+  padding: 20px;
+  border-radius: 3px;
+  color: #bbbbbb;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.35px;
+}
+.username:focus:valid,
+.email:focus:valid,
+.message:focus:valid {
+  outline: 4px solid green;
+}
+.username:focus:invalid,
+.email:focus:invalid,
+.message:focus:invalid {
+  outline: 4px solid red;
+}
+.form-submit {
+  padding: 26px 47px;
+  margin-bottom: 114px;
+  background-color: #fed136;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+/* CONTACT FORM END  */

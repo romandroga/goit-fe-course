@@ -39,15 +39,12 @@ header {
   background: #f38181;
   bottom: 0;
   left: 50%;
-  transition: width .5s, left, .5s;  
+  transition: width .5s, right, .5s;  
 }
 .navigation-list-item a:hover {
   color: #f38181;
 }
 .navigation-list-item a:hover:after {
-  /* position: relative;
-  top: 12px;
-  display: block; */
   width: 100%;
   left: 0;
 }
