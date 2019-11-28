@@ -1,0 +1,214 @@
+/* *{
+    margin: 0;
+} */
+.container{
+    max-width: 320px;
+}
+.m0auto{
+    margin: 0 auto;
+}
+/* HEADER  */
+.header{
+    padding-top: 20px;
+    padding-bottom: 130px;
+    background-color: black;
+    background-image: url(../img/background-normal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.navigation-link{
+    padding: 12px 18px 10px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #fff;
+}
+.navigation-link:hover{
+    border-color: white;
+    color: #fff;
+    text-decoration: none;
+}
+.site-name{
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.site-name:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.header-title{
+    margin: 0 auto;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+.navigation-list{
+    margin: 0 auto;
+    margin-bottom: 115px;
+}
+.header-subtitle{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1;
+}
+.header-button{
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    padding: 14px 0 12px;
+    background-color: #ff4e50;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* HEADER END  */
+/* TEAM  */
+.team-section{
+    padding-top: 70px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+.team-title{
+    margin-bottom: 30px;
+}
+.team-list{
+    margin-bottom: 70px;
+}
+.bradley, .lucas, .heather, .bradley-girl{
+    width: 120px;
+    margin: 0 auto;
+}
+.team-member{
+    display: flex;
+    flex-direction: column;
+}
+.team-member:not(:last-child){
+    margin-bottom: 30px;
+}
+.team-member-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+}
+.team-member-name{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.team-member-image{
+    margin-bottom: 20px;
+}
+.team-button{
+    width: 100%;
+    border: 2px solid #ff4e50;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #ff4e50;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* TEAM END  */
+
+/* AFTER  */
+  .bradley:after {
+    content: url(../img/icons/tv-icon.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    background-color: #ff4e50;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 105px;
+  }
+  .lucas:after {
+    content: url(../img/icons/flask-icon.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    background-color: #ffa507;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 105px;
+  }
+  .heather:after {
+    content: url(../img/icons/tea-icon.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    background-color: #1cd7ad;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 105px;
+  }
+  .bradley-girl:after {
+    content: url(../img/icons/letter-icon.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    background-color: #4e73db;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 105px;
+  }
+/* AFTER END  */
+@media (min-width:768px) and (max-width:990px){
+    .container{
+        max-width: 640px;
+    }
+    .header{
+        /* background-image: url(../img/background-normal.png); */
+        padding-bottom: 230px;
+    }
+    .navigation-list{
+        margin-bottom: 0;
+        margin: auto;
+    }
+    .site-name{
+        padding-top: 10px;
+    }
+    .header-title{
+        margin-top: 150px;
+        margin-bottom: 10px;
+        font-size: 52px;
+    }
+    .team-section{
+        padding-bottom: 40px;
+    }
+    .team-list{
+        flex-direction: row;
+    }
+}
+@media(min-width:990px){
+    .container{
+        max-width: 940px;
+    }
+}
