@@ -1,0 +1,34 @@
+.services {
+  padding-top: 46px;
+  padding-bottom: 90px;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+      display: flex;
+      width: 26%;
+      justify-content: space-between;
+      &:nth-of-type(-n + 3) {
+        margin-bottom: 100px;
+      }
+      &-icon {
+        width: 32px;
+        height: 32px;
+      }
+      &-description {
+        width: 80%;
+        font-size: 15px;
+        line-height: 24px;
+        font-family: $roboto;
+        color: $grey-color;
+      }
+      &-title {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        color: $black-color;
+      }
+    }
+  }
+}

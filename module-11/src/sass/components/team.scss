@@ -1,0 +1,118 @@
+.team {
+  padding-bottom: 70px;
+  &__text {
+    color: $grey-color;
+    font-family: $roboto;
+    margin: 0 auto;
+    font-size: 15px;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      &-image {
+        position: relative;
+        margin-bottom: 30px;
+      }
+      &-name {
+        text-align: center;
+        color: $black-color;
+        font-family: $montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      &-position {
+        text-align: center;
+        color: $grey-color;
+        font-family: $roboto;
+        font-style: italic;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+.sub-menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 470px;
+  opacity: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  align-items: center;
+  justify-content: center;
+  transition: 200ms linear 0.2s;
+  &:hover {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px rgb(149, 225, 211);
+  }
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 227px;
+    height: 56px;
+    background-color: #f38181;
+    padding: 0;
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      background-color: #fce38a;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  &__icon {
+    display: block;
+    width: 60%;
+    height: 60%;
+    fill: #f38181;
+    &:hover {
+      fill: $white-color;
+    }
+  }
+}
+
+//
+
+// .social-list__link {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   width: 56px;
+//   height: 56px;
+//   background-color: #fce38a;
+// }
+// .social-list__link:hover {
+//   background-color: transparent;
+// }
+// .social-list__icon {
+//   display: block;
+//   width: 60%;
+//   height: 60%;
+//   fill: #f38181;
+// }
+// .social-list__link:hover .social-list__icon {
+//   fill: #fff;
+// }
